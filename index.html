@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TaskMate - Task Manager</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Task<span>Mate.</span></h1>
+        <p>Organise your day, one task at a time!</p>
+    </header>
+
+    <div class="container">
+
+        <h2>My Daily Tasks ✨</h2>
+
+        <div class="top-box">
+
+            <div class="box">
+                <h3 id="total">0</h3>
+                <p>Total Tasks</p>
+            </div>
+
+            <div class="box">
+                <h3 id="completed">0</h3>
+                <p>Completed</p>
+            </div>
+
+            <div class="box">
+                <h3 id="pending">0</h3>
+                <p>Pending</p>
+            </div>
+
+        </div>
+
+        <h3 class="progress-title">Your Progress</h3>
+
+        <div class="progress">
+            <div id="bar"></div>
+        </div>
+
+        <p id="percent">0% Completed</p>
+
+        <div class="add-box">
+
+            <input type="text" id="taskInput"
+            placeholder="Enter your task here...">
+
+            <button id="addBtn">+ Add Task</button>
+
+        </div>
+
+        <h3 class="filter-title">My Tasks</h3>
+
+        <div class="filters">
+
+            <button onclick="showTasks('all')">All</button>
+
+            <button onclick="showTasks('pending')">Pending</button>
+
+            <button onclick="showTasks('completed')">Completed</button>
+
+        </div>
+
+        <div id="taskList"></div>
+
+        <p id="emptyMessage">No tasks yet. Add your first task! 🌸</p>
+
+    </div>
+
+    <footer>
+        <p>Made with 💜 by TaskMate | 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
